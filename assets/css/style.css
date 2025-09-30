@@ -1,0 +1,310 @@
+/* ===== Font & Base ===== */
+body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    color: #222;
+    background: #fdfdfd;
+    font-size: 14px; /* 전체 폰트 크기 */
+  }
+  
+  /* ===== Sidebar Menu ===== */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 100vh;
+    background: #f5f5f5; /* 연그레이 */
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+  .sidebar .menu-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+    border-radius: 8px;
+    transition: all 0.2s;
+  }
+  
+  .sidebar .menu-btn:hover {
+    background: #e3f2f9;
+    color: #222;
+    transform: translateX(4px);
+  }
+  
+  /* ===== Main Content ===== */
+  .main-content {
+    margin-left: 160px;
+    padding: 40px;
+    max-width: 1000px; /* 화면 폭 제한 */
+  }
+  
+  /* ===== Profile Section ===== */
+  /* ===== Profile Section (사진 + 이름 + 소개) ===== */
+.profile-section {
+    display: flex;
+    align-items: flex-start; /* 세로 가운데가 아니라 위쪽 기준 */
+    gap: 20px; /* 사진과 텍스트 사이 간격 */
+    margin-bottom: 40px;
+}
+
+.profile-img {
+    width: 140px;
+    border-radius: 50%;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-text h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.profile-text .tagline {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 6px;
+    max-width: 600px;
+}
+
+/* ===== Research Interests ===== */
+.interests-section {
+    margin-bottom: 40px;
+}
+
+.interests-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    text-align: left; /* 왼쪽 정렬 */
+}
+
+.interest-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-start;
+}
+
+.interest-card {
+    background: #e3f2f9;
+    padding: 12px 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    font-weight: 500;
+    text-align: center;
+    width: 200px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    flex: 0 0 calc(33.33% - 8px); /* 한 줄에 3개 */
+    max-width: calc(33.33% - 8px);
+}
+
+.interest-card:hover {
+    transform: translateY(-3px);
+}
+
+/* ===== Contact Section ===== */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 40px;
+    align-items: flex-start; /* 왼쪽 기준선 정렬 */
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: #f0f0f0;
+    font-weight: 500;
+    width: 200px; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    justify-content: center; 
+    transition: transform 0.2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-2px);
+}
+
+.contact-card a {
+    text-decoration: none;
+    color: #555;
+}
+  
+  /* ===== Research / Publication Cards ===== */
+/* 페이지 제목 */
+.page-title {
+    text-align: left;       /* 왼쪽 정렬 */
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 20px;    /* 카드와의 간격 */
+    margin-left: 0;         /* 왼쪽 여백 제거 */
+  }
+  
+  
+  /* ===== Buttons / Links ===== */
+  .button {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background-color: #d9e6f2; /* 연하늘 */
+    color: #111;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  
+  .button:hover {
+    background-color: #c0d9eb;
+  }
+  
+  /* ===== Responsive ===== */
+  @media (max-width: 700px) {
+    .main-content {
+      margin-left: 20px;
+      padding: 20px;
+    }
+  
+    .sidebar {
+      width: 60px;
+      padding-top: 30px;
+    }
+  
+    .sidebar .menu-btn {
+      font-size: 12px;
+      padding: 6px 0;
+      margin-bottom: 12px;
+    }
+  
+    .research-gallery,
+    .publication-gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+
+/* Publications List */
+.publication-list {
+    list-style: none; /* 기본 숫자 제거 */
+    padding-left: 0;
+}
+
+.publication-list li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.pub-number {
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+.pub-title {
+    font-weight: 600;
+}
+
+.pub-authors {
+    color: #555;
+    margin-left: 4px;
+}
+
+.pub-year {
+    color: #888;
+    margin-left: 4px;
+}
+
+.publication-list a {
+    margin-left: 6px;
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.publication-list a:hover {
+    text-decoration: underline;
+}
+
+/* Research Cards - 세로 나열 */
+.research-gallery {
+    display: flex;
+    flex-direction: column; /* 세로 배치 */
+    gap: 20px;
+    align-items: flex-start; /* 왼쪽 기준선 정렬 */
+    margin-top: 10px;
+}
+
+.research-card {
+    background: #f9fafc; /* 이전보다 밝은 색 */
+    border-radius: 12px;
+    padding: 16px;
+    width: 100%;
+    max-width: 1000px;      /* 가로 길이 늘림 */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.research-card:hover {
+    transform: translateY(-2px);
+}
+
+/* 제목 */
+.research-card h3 {
+    margin: 0 0 4px 0;
+    font-weight: 600;
+    font-size: 1rem; /* 조금 줄임 */
+}
+
+/* 기간 */
+.research-card .period {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.research-card .location {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+/* 상세 설명 */
+.research-card p {
+    margin: 0 0 8px 0;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* 상태 */
+.research-card .status {
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: #444;
+    font-style: italic;
+}
+
+.research-card .status a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+.research-card .status a:hover {
+    text-decoration: underline;
+}
