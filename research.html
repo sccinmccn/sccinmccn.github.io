@@ -6,8 +6,6 @@
   <meta name="robots" content="noindex, nofollow">
   <title>Research</title>
   <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
 
 <!-- Top Navigation / Buttons -->
 <aside class="sidebar">
@@ -16,64 +14,191 @@
     <a href="research.html" class="menu-btn">Research</a>
     <a href="publications.html" class="menu-btn">Publications</a>
   </nav>
+  
+  <div class="contact-section">
+    <a href="mailto:mmddui@ewha.ac.kr" class="menu-btn">✉️ mmddui@ewha.ac.kr</a>
+    <a href="https://sccinmccn.github.io" class="menu-btn">🌐 sccinmccn.github.io</a>
+  </div>
 </aside>
 
 <main class="main-content">
   <h1 class="page-title">Research & Projects</h1>
-  
   <div class="research-gallery">
 
-      <div class="research-card">
-        <h3>Identifying SuperAgers from clinical and lifestyle profiles: a machine learning approach</h3>
-        <div class="period">2024 - 2025</div>
+    <div class="research-card" onclick="openModal('modal1')">
+      <div class="card-img">
+        <img src="assets/thumbnail/TN_1.png">
+      </div>
+      <h3>Identifying SuperAgers from Clinical and Lifestyle Profiles</h3>
+      <div class="card-meta">
         <div class="location">📍 Ewha Womans University Mokdong Hospital</div>
-        <p>Using demographic, clinical, and lifestyle data, we aimed to build a predictive model for identifying Superagers and influential factors. These were further validated using additional cognitive assessments and brain volumetrics obtained using T1 MRI scan.</p>
-        <div class="status"><span>Under Review</span></div>
       </div>
-
-      <div class="research-card">
-        <h3>Prediction of MMSE Scores Using Multimodal Digital Biomarkers and Machine Learning</h3>
-        <div class="period">2024 - 2025</div>
-        <div class="location">📍 Ewha Womans University Mokdong Hospital</div>
-        <p>Developed a predictive model for MMSE scores in older adults using keystroke, speech, and eye-tracking data collected via a mobile application.</p>
-        <div class="status"><span>Under Review</span></div>
-      </div>
-    
-      <div class="research-card">
-        <h3>Designing a Strategy-Driven Multi-Turn Conversational Agent for Mental Health Support</h3>
-        <div class="period">2025</div>
-        <div class="location">📍 HCIL @EWHA</div>
-        <p>Developed a strategy-driven conversational agent grounded in psychological theories and evaluated it through a user study with 20 participants.</p>
-        <div class="status"><span>In progress</span></div>
-      </div>
-
-      <div class="research-card">
-        <h3>PhotoTalk: A LLM-based Photo Album Browsing Assistance with Chatbot for People With Visual Impairments</h3>
-        <div class="period">2024</div>
-        <div class="location">📍 HCIL @EWHA</div>
-        <p>Designed and developed an LLM-based assistive system, evaluated through a user study with 14 people with visual impairments.</p>
-        <div class="status"><span>Under Review</span></div>
-      </div>
-
-      <div class="research-card">
-        <h3>SCKD: Self-Cross Similarity Knowledge Distillation for Light Camera Pose Regressor</h3>
-        <div class="period">2022 - 2023</div>
-        <div class="location">📍 Computer Science & Engineering @EWHA</div>
-        <p>Developed a lightweight camera pose estimation model and implemented real-time autonomous driving on NVIDIA JetBot.</p>
-        <div class="status">Demo <a href="https://github.com/e-LENS">🔗</a></div>
-      </div>
-
-      <div class="research-card">
-        <h3>Highlighter</h3>
-        <div class="period">2021</div>
-        <div class="location">📍 Headstart Silicon Valley</div>
-        <p>A full-stack web application project that generates highlight videos by extracting the most engaging clips based on facial expressions and chat logs.</p>
-        <div class="status">Demo <a href="https://github.com/21-summer-team-h/highlighter">🔗</a></div>
-      </div>
-
+      <p>Using demographic, clinical, and lifestyle data, we built a predictive model for identifying SuperAgers and validated it using additional cognitive assessments and T1 MRI scans.</p>
     </div>
+  
+    <div class="research-card" onclick="openModal('modal2')">
+      <div class="card-img">
+        <img src="assets/thumbnail/TN_2.png">
+      </div>
+      <h3>Predicting MMSE Scores Using Multimodal Digital Biomarkers</h3>
+      <div class="card-meta">
+        <div class="location">📍 Ewha Womans University Mokdong Hospital</div>
+      </div>
+      <p>Developed a predictive model for MMSE scores in older adults using keystroke, speech, and eye-tracking data collected via a mobile app.</p>
+    </div>
+  
+    <div class="research-card" onclick="openModal('modal3')">
+      <div class="card-img">
+        <img src="assets/thumbnail/TN_3.png">
+      </div>
+      <h3>Designing a Strategy-Driven Multi-Turn Conversational Agent for Mental Health Support</h3>
+      <div class="card-meta">
+        <div class="location">📍 HCIL @EWHA</div>
+      </div>
+      <p>Developed a strategy-driven conversational agent grounded in psychological theories and evaluated it through a user study with 20 participants.</p>
+    </div>
+  
+    <div class="research-card" onclick="openModal('modal4')">
+      <div class="card-img">
+        <img src="assets/thumbnail/TN_4.png">
+      </div>
+      <h3>PhotoTalk: LLM-based Photo Album Browsing Assistance with Chatbot for People With Visual Impairments</h3>
+      <div class="card-meta">
+        <div class="location">📍 HCIL @EWHA</div>
+      </div>
+      <p>Designed and developed an LLM-based assistive system, evaluated through a user study with 14 visually impaired participants.</p>
+    </div>
+
+    <div class="research-card" onclick="openModal('modal5')">
+      <div class="card-img">
+        <img src="assets/thumbnail/TN_5.png">
+      </div>
+      <h3>SCKD: Self-Cross Similarity Knowledge Distillation for Light Camera Pose Regressor</h3>
+      <div class="location">📍 Computer Science & Engineering @EWHA</div>
+      <p>Developed a lightweight camera pose estimation model and implemented real-time autonomous driving on NVIDIA JetBot.</p>
+      <div class="status">Demo <a href="https://github.com/e-LENS">🔗</a></div>
+    </div>
+
+    <div class="research-card" onclick="openModal('modal6')">
+      <div class="card-img">
+        <img src="assets/thumbnail/TN_6.png">
+      </div>
+      <h3>Highlighter</h3>
+      <div class="location">📍 Headstart Silicon Valley</div>
+      <p>A full-stack web application project that generates highlight videos by extracting the most engaging clips based on facial expressions and chat logs.</p>
+      <div class="status">Demo <a href="https://github.com/21-summer-team-h/highlighter">🔗</a></div>
+    </div>
+  
+    <div id="modal1" class="modal">
+      <div class="modal-inner">
+        <span class="modal-close" onclick="closeModal('modal1')">&times;</span>
+        <div class="modal-body">
+          <div class="modal-content">
+            <h3>Identifying SuperAgers from Clinical and Lifestyle Profiles</h3>
+            <div class="modal-desc">
+                <strong>ABSTRACT</strong><br>
+                <strong>Background</strong><br>
+                SuperAgers are older adults whose cognitive performance, particularly memory, is comparable to middle-aged individuals, reflecting exceptional cognitive resilience. This study applied a machine learning approach to identify SuperAgers and to determine key clinical and lifestyle factors that differentiate them from typical agers.
+
+                <strong>Methods</strong><br>
+                SuperAgers were defined as individuals whose delayed recall performance met or exceeded middle-age norms. Among 107 participants (55 SuperAgers and 52 typical agers), data were collected on medical history, psychosocial characteristics, and nutritional intake. Sleep and physical activity were objectively measured using a smartwatch, arterial stiffness with an oscillometric device, and brain volumetry with T1-weighted structural MRI. A machine learning model, interpreted with SHAP (SHapley Additive exPlanations), was applied to predict SuperAger status and to identify key contributing features.
+                
+                <strong>Results</strong><br>
+                The classification model achieved a mean accuracy of 71% and a mean AUROC of 0.746. SHAP analysis identified that longer deep sleep duration, vigorous physical activity, higher CRI-education scores, greater trait openness, higher omega-3 and vitamin K intake, and lower saturated fat intake were associated with SuperAger status. Clinically, a smaller vascular age gap, absence of diabetes, and a negative family history of dementia were important contributors. Exploratory analysis showed a positive correlation between insular volume and SuperAger probability.
+
+                <strong>Conclusions</strong><br>
+                Machine learning applied to integrated clinical and lifestyle profiles can identify SuperAgers with moderate accuracy. The findings highlight modifiable behavioral and clinical factors that may inform targeted strategies to promote cognitive resilience and delay cognitive decline in aging populations.
+            </div>
+            
+            <strong>Nomogram for estimating the probability of being a SuperAger</strong>
+            <img class="modal-img" src="assets/thumbnail/TN_1.png" alt="Project Image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal">
+      <div class="modal-inner">
+        <span class="modal-close" onclick="closeModal('modal2')">&times;</span>
+        <div class="modal-body">
+          <img class="modal-img" src="assets/thumbnail/TN_2.png" alt="Project Image">
+          <div class="modal-content">
+            <h3>Predicting MMSE Scores Using Multimodal Digital Biomarkers</h3>
+            <div class="modal-desc">
+                <strong>ABSTRACT</strong><br>
+                <strong>Background</strong><br>
+                The Mini-Mental State Examination (MMSE) is widely used for cognitive screening but requires in-person administration. Recently, digital biomarkers such as speech, motor, and eye movements offer scalable alternatives. This study develops a machine learning model predicting continuous MMSE scores from multimodal digital biomarkers. 
+
+                <strong>Methods</strong><br>
+                240 older adults completed assessments using the Alzguard application and Korean MMSE-2. From tasks measuring keystroke dynamics, verbal language, and eye movement domains, features capturing reaction time, correctness, semantic recall, and acoustic characteristics were extracted. An XGBoost regression model was trained after feature selection. 
+
+                <strong>Results</strong><br>
+                The model achieved MAE 1.213, RMSE 1.397, and R² 0.675. Faster task-switching reaction times, higher correctness, and greater semantic recall were key features positively associated with higher MMSE scores.
+
+                <strong>Discussion</strong><br>
+                Multimodal digital biomarkers can predict continuous MMSE scores, providing a fine-grained measure of cognitive function. Findings support the feasibility of digital tools for accessible, scalable cognitive screening in aging populations.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal3" class="modal">
+      <div class="modal-inner">
+        <span class="modal-close" onclick="closeModal('modal3')">&times;</span>
+        <div class="modal-body">
+          <img class="modal-img" src="assets/thumbnail/TN_3.png">
+          <div class="modal-content">
+            <h3>Designing a Strategy-Driven Multi-Turn Conversational Agent for Mental Health Support</h3>
+            <div class="modal-desc">
+              <strong>ABSTRACT</strong><br>
+              Large Language Models (LLMs) demonstrate strong conversational abilities, opening new opportunities for their application in mental health support. Yet, they often fall short in exploring user concerns or conveying empathy, and frequently produce superficial and generic responses, particularly as conversational context accumulates. To address these challenges, we investigate how strategy planning can enhance conversational quality and improve user experience. Grounded in psychological principles, our approach integrates Hill’s helping stages with psychotherapeutic techniques. Specifically, a planner module, trained to predict turn-level strategies, selects the appropriate strategy based on dialogue context and generates responses accordingly. Results from a user study with 20 participants indicate that the strategy-driven conversational agent enhances the exploration of user concerns, perceived empathy, contextual relevance, and helpfulness. Our findings suggest that deploying turn-level strategies guided by psychological principles can improve user experience and overall effectiveness, highlighting design implications for LLM-based conversational agents in mental health support.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal4" class="modal">
+      <div class="modal-inner">
+        <span class="modal-close" onclick="closeModal('modal4')">&times;</span>
+        <div class="modal-body">
+          <img class="modal-img" src="assets/thumbnail/TN_4.png">
+          <div class="modal-content">
+            <h3>PhotoTalk: A LLM-based Photo Album Browsing Assistance with Chatbot for People With Visual Impairments</h3>
+            <strong>ABSTRACT</strong><br>
+            <div class="modal-desc">
+              People with visual impairments often face difficulties finding desired photos in their smartphone albums. To identify the needs and challenges in photo browsing, we first conducted an interview with 10 participants with visual impairments. Based on the findings, we propose PhotoTalk, an intelligent photo album that assists users with photo browsing tasks by making requests to a LLM-based chatbot for finding photos of specific objects (e.g., “Find photos with flowers”), visual question and answering (e.g., “What color are the flowers?”), and recommendations (e.g., “Which photo looks better for my Instagram?”). As for the evaluation, we conducted another user study with 13 participants with visual impairments, which resulted in high ratings in terms of System Usability Score. Specifically, participants highly appreciated its ease of use and efficiency compared to existing methods when finding photos. They also noted that it could address the challenges they previously encountered (e.g., finding photos that are not well-remembered, distinguishing between similar photos). We discuss design implications for future chatbot-based assistance to enhance visual accessibility and independent photo browsing for people with visual impairments.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal5" class="modal">
+      <div class="modal-inner">
+        <span class="modal-close" onclick="closeModal('modal5')">&times;</span>
+        <div class="modal-body">
+          <div class="modal-content">
+            <h3>SCKD: Self-Cross Similarity Knowledge Distillation for Light Camera Pose Regressor</h3>
+            <div class="modal-desc">
+              The similarity based knowledge distillation mehod to compress the 6-DoF Pose Regressor model so that it can show high performance on 5W low-power environment.
+            </div>
+
+            <strong>How our JetRacer runs at the school 🚙</strong>
+            <div class="modal-gif">
+              <img src="assets/thumbnail/JetRacer.gif" alt="JetRacer Demo" style="width:32%; border-radius:8px; margin-top:12px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
   </div>
 </main>
+
+<script src="modal.js"></script>
 
 </body>
 </html>
