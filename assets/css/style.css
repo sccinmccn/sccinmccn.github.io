@@ -199,13 +199,14 @@ body {
 .research-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem;
-  justify-content: flex-start;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .research-card {
-  flex: 1 1 250px;
-  max-width: 540px;
+  flex: 1 1 45%;       /* 화면 폭의 약 45% 확보 → 2개 가능 */
+  max-width: 540px;    /* 최대 폭 */
+  min-width: 250px;    /* 너무 작아지지 않도록 */
   height: auto;
   background: #fefefe;
   border-radius: 12px;
